@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "nama": "John",
+        "Masa Kerja": "Kurang dari 1 tahun",
+        "Level Jabatan": "Foreman",
+        "Departemen": "Supporting",
+        "Evaluasi": "5",
+        "Peringatan Karyawan": "Tanpa sanksi"
+    },
+    {
+        "id": 2,
+        "nama": "Alice",
+        "Masa Kerja": "4 - 6 tahun",
+        "Level Jabatan": "Manager",
+        "Departemen": "Produksi",
+        "Evaluasi": "4",
+        "Peringatan Karyawan": "SP 2"
+    },
+    {
+        "id": 3,
+        "nama": "Bob",
+        "Masa Kerja": "7 - 10 tahun",
+        "Level Jabatan": "Manager",
+        "Departemen": "Non-Produksi",
+        "Evaluasi": "3",
+        "Peringatan Karyawan": "SP 3"
+    },
+    {
+        "id": 4,
+        "nama": "Eva",
+        "Masa Kerja": "1 - 3 tahun",
+        "Level Jabatan": "Operator",
+        "Departemen": "Non-Produksi",
+        "Evaluasi": "5",
+        "Peringatan Karyawan": "Skorsing 3 bulan"
+    },
+    {
+        "id": 5,
+        "nama": "Michael",
+        "Masa Kerja": "Lebih dari 10 tahun",
+        "Level Jabatan": "Manager",
+        "Departemen": "Supporting",
+        "Evaluasi": "9",
+        "Peringatan Karyawan": "Skorsing 6 bulan"
+    }
+]
