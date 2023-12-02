@@ -24,7 +24,7 @@ export default function Sidebar({ setPage }) {
           </div>
         </div>
         <div className="flex">
-          <a className="btn btn-ghost text-xl">Gajian</a>
+          <a className="btn btn-ghost text-xl">Bonus Calculator</a>
         </div>
 
       </div>
@@ -34,9 +34,9 @@ export default function Sidebar({ setPage }) {
         <ul className="menu p-4 w-64 min-h-full bg-base-200 text-base-content  h-full flex flex-col justify-between">
           {/* Sidebar content here */}
           <div className="">
-            <a className="btn btn-ghost text-xl">Gajian</a>
+            <a className="btn btn-ghost text-xl">Bonus Calculator</a>
             <div className="mt-16">
-              <li><a onClick={() => setPage("input")}>Input Karyawan</a></li>
+              <li><a onClick={() => setPage("input")}>Input Employee</a></li>
               <li><a onClick={() => setPage("settings")}>Settings</a></li>
             </div>
           </div>

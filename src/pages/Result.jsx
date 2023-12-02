@@ -102,13 +102,13 @@ export default function Result({ setPage }) {
             </div>
             <div className="flex flex-col align-middle w-full gap-10">
                 <div className="overflow-x-auto">
-                    <h3 className='text-center'>Alternatives</h3>
+                    <h3 className='text-center'>Priorities</h3>
                     <table className="table my-5 max-w-md bg-neutral mx-auto">
                         {/* head */}
                         <thead>
                             <tr>
-                                <th className='text-center w-28'>Alternatives</th>
-                                <th>Karyawan</th>
+                                <th className='text-center w-28'>Rank</th>
+                                <th>Employees</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -134,7 +134,7 @@ export default function Result({ setPage }) {
                         <thead>
                             <tr>
                                 <th className='text-center'>Alternatives</th>
-                                <th>Karyawan</th>
+                                <th>Employees</th>
                                 {
                                     settings.map((setting, index) => {
                                         return (
@@ -183,7 +183,7 @@ export default function Result({ setPage }) {
                         <thead>
                             <tr>
                                 <th className='text-center'>Alternatives</th>
-                                <th>Karyawan</th>
+                                <th>Employees</th>
                                 {
                                     settings.map((setting, index) => {
                                         return (
@@ -249,7 +249,7 @@ export default function Result({ setPage }) {
                         <thead>
                             <tr>
                                 <th className='text-center'>Alternatives</th>
-                                <th>Karyawan</th>
+                                <th>Employees</th>
                                 <th className='text-end'>Score</th>
                             </tr>
                         </thead>

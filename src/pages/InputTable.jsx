@@ -60,7 +60,7 @@ export default function InputTable({ setPage }) {
                     <thead>
                         <tr>
                             <th></th>
-                            <th>Karyawan</th>
+                            <th>Employees</th>
                             {settings.map((item, index) => {
                                 return (
                                     <th key={index}>{item.criteria}</th>
