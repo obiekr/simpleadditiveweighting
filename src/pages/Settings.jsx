@@ -8,7 +8,9 @@ export default function Settings({ setPage }) {
     const [activeTab, setActiveTab] = useState(0)
 
     function addRow() {
-        const newSettings = [...settings, { criteria: '', weight: '' }]
+        // get last id of settings
+        const lastId = settings[settings.length - 1]?.id ?? 0
+        const newSettings = [...settings, { id: lastId+1, criteria: '', weight: '' }]
         setSettings(newSettings)
         localStorage.setItem('settings', JSON.stringify(newSettings))
     }
@@ -137,7 +139,7 @@ export default function Settings({ setPage }) {
                     </tbody>
                 </table>
                 <div className="flex justify-center my-10 gap-x-6">
-                    <button className="btn btn-secondary w-2/5" onClick={addRow}>Add Row</button>
+                    <button type="button" className="btn btn-secondary w-full sm:w-2/5" onClick={addRow}>Add Row</button>
                 </div>
             </div>
 
@@ -157,12 +159,12 @@ export default function Settings({ setPage }) {
                         })
                     }
                 </div>
-                {settings[activeTab].type === "select" &&
+                {settings[activeTab]?.type === "select" &&
                     <ValueTable
                         settings={settings} activeTab={activeTab}
                         setSettings={setSettings} />
                 }
-                {settings[activeTab].type === "range" &&
+                {settings[activeTab]?.type === "range" &&
                     <ValueRange settings={settings}
                         activeTab={activeTab}
                         setSettings={setSettings} />

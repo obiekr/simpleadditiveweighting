@@ -23,6 +23,7 @@ export default function ValueTable({ settings, activeTab, setSettings }) {
 
     return (
         <div className="">
+            <p className="my-5 mx-10">*Enter value starting from the highest value</p>
             <table className="table my-5">
                 {/* head */}
                 <thead>
@@ -53,7 +54,7 @@ export default function ValueTable({ settings, activeTab, setSettings }) {
                 </tbody>
             </table>
             <div className="flex justify-center my-10 gap-x-6">
-                <button className="btn btn-secondary w-2/5" onClick={addRow}>Add Row</button>
+                <button type="button" className="btn btn-secondary w-full sm:w-2/5" onClick={addRow}>Add Row</button>
             </div>
         </div>
     )

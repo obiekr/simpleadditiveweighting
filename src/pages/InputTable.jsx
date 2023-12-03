@@ -7,7 +7,9 @@ export default function InputTable({ setPage }) {
     const [settings, setSettings] = useState(DUMMYSETTINGS)
 
     function addRow() {
-        const newData = [...data, { id: data.slice(-1)[0]?.id + 1 ?? 0, nama: '', masa_kerja: '', level_jabatan: '', departemen: '', evaluasi_atasan: '', peringatan_karyawan: '' }]
+        const lastId = data[data.length - 1]?.id ?? 0
+        console.log(lastId)
+        const newData = [...data, { id: lastId+1, nama: '', masa_kerja: '', level_jabatan: '', departemen: '', evaluasi_atasan: '', peringatan_karyawan: '' }]
         setData(newData)
         localStorage.setItem('data', JSON.stringify(newData))
     }
@@ -52,7 +54,7 @@ export default function InputTable({ setPage }) {
     return (
         <form className="" onSubmit={(e) => handleSubmit(e)}>
             <div className="flex justify-end my-4 gap-x-6 w-full">
-                <button type='submit' className="btn btn-primary w-1/6">Calculate</button>
+                <button type='submit' className="btn btn-primary md:w-1/6">Calculate</button>
             </div>
             <div className="overflow-x-auto">
                 <table className="table my-5">
@@ -106,7 +108,7 @@ export default function InputTable({ setPage }) {
                                             })
                                         }
                                         <td className='p-1 '>
-                                            <button className="btn btn-error" onClick={() => deleteRow(item.id)}>
+                                            <button type='button' className="btn btn-error" onClick={() => deleteRow(item.id)}>
                                                 Delete Row
                                             </button>
                                         </td>
@@ -119,7 +121,7 @@ export default function InputTable({ setPage }) {
                 </table>
             </div>
             <div className="flex justify-center my-10 gap-x-6">
-                <button className="btn btn-secondary w-2/5" onClick={addRow}>Add Row</button>
+                <button type='button' className="btn btn-secondary w-full sm:w-2/5" onClick={addRow}>Add Row</button>
             </div>
         </form>
     )
