@@ -23,7 +23,7 @@ export default function ValueTable({ settings, activeTab, setSettings }) {
 
     return (
         <div className="">
-            <p className="my-5 mx-10">*Enter value starting from the highest value</p>
+            <p className="my-5 mx-10">*Enter value starting from the lowest value</p>
             <table className="table my-5">
                 {/* head */}
                 <thead>
